@@ -1,6 +1,6 @@
 .product{
     width: 200px;
-    height: 310px;
+    height: 410px;
     border: 1px solid #e2e2e2;
     border-radius: 8px;
     padding: 7px;
@@ -9,4 +9,5 @@
 .product img{
     width: 200px;
     height: 246px;
+    border-radius: 8px;
 }
