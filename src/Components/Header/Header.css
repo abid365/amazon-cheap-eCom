@@ -4,4 +4,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 100px;
+}
+
+nav.header div a{
+    margin-left: 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+nav.header a:hover{
+    color: orange;
 }
