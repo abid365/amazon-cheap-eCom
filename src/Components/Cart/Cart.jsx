@@ -6,19 +6,24 @@ const Cart = ({cart}) => {
     //const {cart} = props; //option-2
     console.log(cart);
     
-    let total = 0;
+    let totalPrice = 0;
+    let totalPriceShipping = 0;
     for (const product of cart){
-        total = total + product.price;
+        totalPrice = totalPrice + product.price;
+        totalPriceShipping = totalPriceShipping + product.shipping;
     }
+
+    const tax = totalPrice*7/100 ;
+    const grandTotal = totalPrice + tax + totalPriceShipping;
 
     return (
         <div className='cart-style'>
             <h4>Order Summary</h4>
             <p>Selected Items: {cart.length}</p>
-            <p>Total Price: {total}</p>
-            <p>Total Shipping Charge: </p>
-            <p>Tax: </p>
-            <h5>Grand Total: </h5>
+            <p>totalPrice Price: ${totalPrice}</p>
+            <p>totalPrice Shipping Charge: ${totalPriceShipping}</p>
+            <p>Tax: ${tax.toFixed(2)}</p>
+            <h5>Grand totalPrice: ${grandTotal.toFixed(2)}</h5>
         </div>
     );
 };
