@@ -4,7 +4,7 @@ import './Cart.css';
 const Cart = ({cart}) => {
     // const cart = props.cart; // option-1
     //const {cart} = props; //option-2
-    console.log(cart);
+    // console.log(cart);
     
     let totalPrice = 0;
     let totalPriceShipping = 0;
@@ -20,8 +20,8 @@ const Cart = ({cart}) => {
         <div className='cart-style'>
             <h4>Order Summary</h4>
             <p>Selected Items: {cart.length}</p>
-            <p>totalPrice Price: ${totalPrice}</p>
-            <p>totalPrice Shipping Charge: ${totalPriceShipping}</p>
+            <p>Total Price: ${totalPrice}</p>
+            <p>Total Shipping Charge: ${totalPriceShipping}</p>
             <p>Tax: ${tax.toFixed(2)}</p>
             <h5>Grand totalPrice: ${grandTotal.toFixed(2)}</h5>
         </div>
