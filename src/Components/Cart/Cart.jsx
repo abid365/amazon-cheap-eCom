@@ -6,11 +6,16 @@ const Cart = ({cart}) => {
     //const {cart} = props; //option-2
     console.log(cart);
     
+    let total = 0;
+    for (const product of cart){
+        total = total + product.price;
+    }
+
     return (
         <div className='cart-style'>
             <h4>Order Summary</h4>
             <p>Selected Items: {cart.length}</p>
-            <p>Total Price:</p>
+            <p>Total Price: {total}</p>
             <p>Total Shipping Charge: </p>
             <p>Tax: </p>
             <h5>Grand Total: </h5>
