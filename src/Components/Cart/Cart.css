@@ -13,3 +13,14 @@
 .cart-style > p{
     font-size: 12px;
 }
+
+.btn-clearcart{
+    margin: 10px auto;
+    background-color: #ff3030;
+    border-radius: 4px;
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
