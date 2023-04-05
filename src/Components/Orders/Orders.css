@@ -2,3 +2,24 @@
     margin: 100px auto;
 
 }
+
+
+.proceed-link{
+    text-decoration:none;
+}
+
+.proceed-text{
+    font-size: 12px;
+}
+
+.btn-proceed{
+    margin: 10px auto;
+    background-color: #ff9900;
+    border-radius: 4px;
+    color:white;
+    width: 100%;
+    /* font-size: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
